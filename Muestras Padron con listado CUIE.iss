@@ -1,28 +1,4 @@
-Sub Main
 
- 
-
-
-'================================================================== 
-' =========== CONDICION PARA SACAR LA MUESTRA  =====================
-'
-'          CALCULOS / SEMILLA = @int(CALCULOS / SEMILLA) .or.  @If(  CANTIDAD_MUESTRA * SEMILLA > CUIE_X_BENEF;    @GetNextValue("CUIE") <> CUIE)
-'
-' ARCHIVO con CUIE seleccionados para provincia debe llamarse "CUIE SELECCIONADOS:IMD"
-'================================================================== 
-'================================================================== 
-
- 
-  ' ======================================= MUESTRA =========================
-'GoTo asdasd
-  
-entrada = "Para la muestra CORTO.IMD"
-salida = "PARA MUESTRA.IMD"
-condicion =  ""
-Call  exttracionConCondicion(entrada, salida, condicion)
-  
-  archivo = salida
-  campo = "PROV_ID"
   Call cambioCampoCaracterANumerico(archivo, campo)
   
   
